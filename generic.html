@@ -1,0 +1,198 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>EMS Response Times in NYC: Data Manipulation & Analysis</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>Sumana C: </strong> Portfolio</a>
+									<ul class="icons">
+										<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
+										<li><a href="https://www.linkedin.com/in/sumanachilakamarri1/" class="icon brands fa-linkedin"><span class="label">Medium</span></a></li>
+									</ul>
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>EMS Response Times in NYC</h1>
+									</header>
+
+						
+									<p>Contributors: Sumana Chilakamarri & Diya Mohan</p>
+									<p>Our final project analyzes how a neighborhood’s economic wealth affects access to emergency medical services. Specifically, we used New York City and its five characteristic boroughs, Manhattan, Queens, the Bronx, Brooklyn, and Staten Island to hypothesize that lower income boroughs face more barriers to obtain emergency medical response resources than high-income boroughs do on the basis of EMS efficiency.
+
+										We chose this region because New York City is a large-scale model for other urbanized areas in the United States that have extreme wealth inequalities (one of the aspects that we analyzed through web scraping), with densely concentrated populations of groups on either end of the spectrum being common indicators of the areas that are wealthy and those that are not.
+										
+										We also chose to focus on data from the year of  2021, because COVID likely had an effect on all aspects of emergency medical services as well as the demographic data for each borough.
+										</p>
+
+
+									<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSx76foytVBhebk6Qtw6cfEgkYY26hOL2vgJuvzneg177qGD075SSvqLtVhUIXhuyah39kMdv8T3Qib/embed?start=false&loop=true&delayms=5000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+									<p>As a general outline of our process, we first cleaned three data sets, one API related to borough demographics, one .json file regarding average emergency response times for each month across several years, and one large .csv file with ~24 million rows of every EMS case in NYC from 2005 to halfway through 2022.
+
+										We then proceeded to analyze these data sets in a specific order: </p>
+										
+										<p>First we used the API related to borough demographic data in order to predict 2021’s borough demographic data. Next, we used the large .csv file to analyze the relationship between dispatch response times and incident response times based on various factors, and then we used the .json file to just analyze the center and spread of incident response times in more detail. 
+										</p>
+
+									
+									<hr class="major" />
+
+									<h2>Insights</h2>
+									<p>1. The Bronx & Brooklyn have the lowest median household incomes and highest poverty rates while Manhattan & Staten Island have the highest
+										median incomes and lowest poverty rates in 2021.</p>
+									<p>2. The lowest percent of EMS incidents treated and transported fall under lower-income boroughs such as Brooklyn and Bronx </p>
+									<p>3. Lower income boroughs had the greatest percentage of their cases where actual response time was less than predicted as opposed to higher income boroughs such as Manhattan and Staten Island.</p>
+									<p>4. Lower income boroughs have a higher mean and median incident response time as compared to higher income boroughs.
+									</p>
+									<p>5. The spread of data varies significantly from borough to borough.</p>
+									<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p> -->
+
+									<hr class="major" />
+
+									<h2>Code</h2>
+									<p>We used Python, specifically numpy & Pandas dataframes along with Python visualization libraries (Matplotlib, Plotly, Seaborn, etc.) to manipulate, analyze, and visualize these datasets. </p>
+									<a href="https://drive.google.com/file/d/1l3xG6TcJ1gIAqD6nCPQNYA4x768Ilawj/view?usp=sharing">Link to Code</a>
+
+									<hr class="major" />
+
+									<h2>Conclusion</h2>
+									<p>This project not only helped us substantiate our hypothesis and come up with valuable insights,
+										but it also taught me the importance of cleaning data, taking care of inconsistencies, and finding accurate and quality data
+										so that we can make analysis accordingly. I also learned about the importance of visualizing data 
+										to find patterns and make insights regarding these patterns.
+									</p>
+									<p>Data Science is important not only to make and substantiate claims, but also to make informed decisions, understanding trends, predicting and forecasting, and constantly improving! </p>
+
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search -->
+								<!-- <section id="search" class="alt"> -->
+									<!-- <form method="post" action="#"> -->
+										<!-- <input type="text" name="query" id="query" placeholder="Search" /> -->
+									<!-- </form> -->
+								<!-- </section> -->
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">Homepage</a></li>
+										<li><a href="generic.html">EMS Response Times in NYC</a></li>
+										<li><a href="elements.html">Health Informatics Using FHIR</a></li>
+										<li><a href="airline.html">Airline Management Systems</a></li>
+										<li><a href="consulting.html">Cornerstone Design</a></li>
+										<li>
+											<!-- <span class="opener">Submenu</span>
+											<ul>
+												<li><a href="#">Lorem Dolor</a></li>
+												<li><a href="#">Ipsum Adipiscing</a></li>
+												<li><a href="#">Tempus Magna</a></li>
+												<li><a href="#">Feugiat Veroeros</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Etiam Dolore</a></li>
+										<li><a href="#">Adipiscing</a></li>
+										<li>
+											<span class="opener">Another Submenu</span>
+											<ul>
+												<li><a href="#">Lorem Dolor</a></li>
+												<li><a href="#">Ipsum Adipiscing</a></li>
+												<li><a href="#">Tempus Magna</a></li>
+												<li><a href="#">Feugiat Veroeros</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Maximus Erat</a></li>
+										<li><a href="#">Sapien Mauris</a></li>
+										<li><a href="#">Amet Lacinia</a></li>
+									</ul>
+								</nav> -->
+
+							<!-- Section -->
+								<!-- <section>
+									<header class="major">
+										<h2>Ante interdum</h2>
+									</header>
+									<div class="mini-posts">
+										<article>
+											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+										</article>
+									</div>
+									<ul class="actions">
+										<li><a href="#" class="button">More</a></li>
+									</ul>
+								</section> -->
+
+							<!-- Section -->
+								<!-- <section>
+									<header class="major">
+										<h2>Get in touch</h2>
+									</header>
+									<p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+									<ul class="contact">
+										<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
+										<li class="icon solid fa-phone">(000) 000-0000</li>
+										<li class="icon solid fa-home">1234 Somewhere Road #8254<br />
+										Nashville, TN 00000-0000</li>
+									</ul>
+								</section>
+
+							Footer -->
+								<!-- <footer id="footer">
+									<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div> -->
+
+		<!-- Scripts
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script> -->
+
+	</body>
+</html>
